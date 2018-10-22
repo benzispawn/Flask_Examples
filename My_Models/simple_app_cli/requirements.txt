@@ -1,0 +1,15 @@
+Flask
+
+# Server.
+gunicorn
+
+# Testing and static analysis.
+pytest
+pytest-cov
+flake8
+
+# CLI.
+Click
+
+# Extensions
+flask-debugtoolbar

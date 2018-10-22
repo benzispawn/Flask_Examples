@@ -1,0 +1,61 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Minha home page!{% endblock %}
+{% block meta_description %}Apena minha página principal.{% endblock %}
+
+{% block body %}
+<div class="uk-section uk-section-default">
+  <div class="uk-container">
+    <div class="uk-flex uk-flex-center@s">
+      <h1
+      class="uk-card-title uk-text-center">
+        Bem vindo a minha HomePage!!!
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="uk-section uk-section-default">
+  <div class="uk-container uk-container-expand">
+    <div
+      class="uk-flex uk-flex-center@s
+      uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+      <div
+        class="uk-card uk-card-large
+        uk-card-default uk-card-body uk-margin-auto uk-margin-large-left">
+        <h1 class="uk-card-title uk-text-center">Eu</h1>
+        <h3 class="uk-card-title uk-text-center">Texto</h3>
+      </div>
+      <div class="
+      uk-card uk-card-large uk-card-default uk-card-body uk-margin-auto">
+        <h1 class="uk-card-title uk-text-center">Amo</h1>
+        <h3 class="uk-card-title uk-text-center">Muito</h3>
+      </div>
+      <div class="
+      uk-card uk-card-large uk-card-default
+      uk-card-body uk-margin-auto uk-margin-large-right">
+        <h1 class="uk-card-title uk-text-center">Banana</h1>
+        <h3 class="uk-card-title uk-text-center">Inútil</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="uk-section uk-section-default">
+  <div class="uk-container uk-container-expand">
+    <div
+      class="uk-flex uk-flex-center@s
+      uk-child-width-1-1@m uk-grid-small uk-grid-match">
+      <div
+        class="uk-card uk-card-large@s
+        uk-card-default uk-card-body
+        uk-margin-large-right uk-margin-large-left">
+        <h3
+          class="uk-card-title uk-text-center
+          uk-margin-medium-right uk-margin-medium-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

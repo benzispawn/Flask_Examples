@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="{% block meta_description %}{% endblock %}">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js">
+    </script>
+
+
+  </head>
+  <body>
+    <nav uk-navbar class="uk-navbar-container">
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+          <li><a href="{{url_for('page.home')}}">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="uk-container uk-container-large">
+        {% block heading %}{% endblock %}
+      </div>
+      {% block body %}
+      {% endblock %}
+    </main>
+
+    <footer uk-navbar class="uk-navbar-container">
+      <div class="uk-navbar-right uk-card uk-card-footer">
+        <ul class="uk-navbar-nav">
+          <li><a href="{{url_for('page.home')}}">Home</a></li>
+          <li><a href="{{url_for('page.home')}}">Ajuda</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="uk-container uk-container-small">
+      <div
+        class="uk-flex uk-flex-center@s uk-child-width-1-3@m
+        uk-grid-small uk-grid-match
+        uk-margin-small-top uk-margin-small-top" uk-grid>
+        <p class="uk-card-footer uk-text-center@m">Web_site &copy; 2016</p>
+      </div>
+    </div>
+  </body>
+</html>

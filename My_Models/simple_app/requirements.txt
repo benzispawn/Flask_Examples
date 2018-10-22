@@ -1,0 +1,9 @@
+Flask
+
+# Application server
+gunicorn
+
+# Testing and static analysis
+pytest
+pytest-cov
+flake8 
